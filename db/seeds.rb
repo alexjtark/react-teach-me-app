@@ -4,4 +4,4 @@
 # Examples:
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-categories = Category.create([{name: "Programming"},{name: "Guitar"}, {name: "Piano"}, {name: "Cooking"}])
+categories = Category.create([{name: "Programming"},{name: "Musical Instruments"}, {name: "Sports"}, {name: "Cooking"}, {name: "Languages"}, {name: "Acting"}])
