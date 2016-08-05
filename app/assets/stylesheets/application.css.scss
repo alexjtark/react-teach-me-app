@@ -1,0 +1,297 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+
+.hero {
+	background-image: url('home-hero.jpg');
+	height: 500px;
+  background-size: cover;
+}
+.Programming {
+    background-image: url('Programming.jpg');
+    height: 300px;
+  background-size: cover;
+}
+.hero-intro {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 0px 1px 4px black;
+}
+.sub-cat-hero {
+    text-align: center;
+}
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*navigation*/
+.site-header {
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    background: #fff;
+    z-index: 999;
+    -webkit-transition: all 0.3s ease 0.2s;
+    -moz-transition: all 0.3s ease 0.2s;
+    -ms-transition: all 0.3s ease 0.2s;
+    -o-transition: all 0.3s ease 0.2s;
+    transition: all 0.3s ease 0.1s;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+.site-logo {
+    padding-left: 20px;
+}
+
+.site-logo {
+    float: left;
+}
+.site-logo h1 {
+    padding: 25px 0 25px;
+    margin-bottom: 0;
+    margin-top: 0px;
+    font-size: inherit;
+    line-height: normal;
+    -webkit-transition: all 0.3s ease 0.2s;
+    -moz-transition: all 0.3s ease 0.2s;
+    -ms-transition: all 0.3s ease 0.2s;
+    -o-transition: all 0.3s ease 0.2s;
+    transition: all 0.3s ease 0.1s;
+}
+.site-logo .default-logo {
+    display: block;
+}
+.site-logo a {
+    color: #fff;
+    display: block;
+}
+
+.site-logo .retina-logo {
+    display: none;
+}
+#menu-toggle {
+    float: right;
+    font-size: 20px;
+    margin-top: 29px;
+    margin-right: 20px;
+    color: #333;
+}
+
+.visible-lg, .visible-md, .visible-sm, .visible-xs {
+    display: none!important;
+}
+
+.main-navigation > ul {
+    margin: 0;
+    list-style-type: none;
+    float: right;
+}
+
+.main-navigation > ul > li {
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.main-navigation > ul > li > a {
+    line-height: 80px;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.24s ease-in-out;
+    -moz-transition: opacity 0.24s ease-in-out;
+    transition: opacity 0.24s ease-in-out;
+}
+
+.main-navigation > ul > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.main-navigation > ul > li > a {
+    display: block;
+    color: #1a2228;
+    padding: 0 20px;
+    line-height: 70px;
+}
+p.drop-caps.secondary:first-child:first-letter, .accent-bg, .fa.accent-color, .btn-primary, .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .label-primary, .progress-bar-primary, a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus, .accordion-heading .accordion-toggle.active, .accordion-heading:hover .accordion-toggle.active, .panel-primary > .panel-heading, .carousel-indicators .active, .flex-control-nav a:hover, .flex-control-nav a.flex-active, .nav-tabs li a:active, .nav-tabs li.active a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .main-navigation > ul > li > a:hover, .main-navigation > ul > li > a.current, .main-navigation > ul > li.highlight a:hover, .team-item-overlay a:hover, #weather, #back-to-top:hover, .plan-style1, .social-icons li a:hover, .icon-box.icon-box-style1:hover .ico, .owl-theme .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span, .ibox-effect.ibox-dark .ibox-icon i:hover, .ibox-effect.ibox-dark:hover .ibox-icon i, .ibox-border.ibox-effect.ibox-dark .ibox-icon i:after, .icon-box .ibox-icon i, .icon-box .ibox-icon img, .icon-box .ibox-icon i, .icon-box .ibox-icon img, .icon-box.ibox-dark.ibox-outline:hover .ibox-icon i, .wpcf7-form .wpcf7-submit, .tickera .tickera-button {
+    background-color: #579bd3;
+}
+.main-navigation > ul > li > a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* panel styling */
+
+.bg-grey {
+    background: #f7f7f7;
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+}
+.content-md {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+}
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+.block-grid-v1 {
+    background: #fff;
+    padding: 15px 15px 5px;
+    border-bottom: solid 2px #eee;
+    transition: all 0.4s ease-in-out;
+}
+.rounded {
+    border-radius: 4px !important;
+}
+.block-grid-v1 img.block-grid-v1-img {
+    width: 35px;
+    height: 35px;
+    margin-top: 8px;
+}
+.block-grid-v1 img {
+    margin-bottom: 10px;
+}
+.pull-left {
+    float: left;
+}
+.rounded-x {
+    border-radius: 50% !important;
+}
+.pull-left {
+    float: left!important;
+}
+.content-boxes-v3 i.icon-custom {
+    top: 8px;
+    float: left;
+    position: relative;
+}
+
+i.icon-bg-red {
+    background: #e74c3c;
+}
+i.icon-bg-u, i.icon-bg-red, i.icon-bg-sea, i.icon-bg-dark, i.icon-bg-darker, i.icon-bg-grey, i.icon-bg-blue, i.icon-bg-green, i.icon-bg-yellow, i.icon-bg-orange, i.icon-bg-purple, i.icon-bg-aqua, i.icon-bg-brown, i.icon-bg-dark-blue, i.icon-bg-light-grey, i.icon-bg-light-green {
+    color: #fff;
+    border-color: transparent;
+}
+i.icon-sm {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+}
+i.icon-custom {
+    color: #555;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+    display: inline-block;
+    border: solid 1px #555;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.content-boxes-v3 .content-boxes-in-v3 {
+    padding: 0 20px;
+    overflow: hidden;
+}
+.block-grid-v1 .star-vote {
+    padding: 0;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+.block-grid-v1 .star-vote li {
+    padding: 0;
+    font-size: 11px;
+    display: inline-block;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-star:before {
+    content: "\f005";
+}
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}
+
+.margin-bottom-5, .margin-bottom-10, .margin-bottom-15, .margin-bottom-20, .margin-bottom-25, .margin-bottom-30, .margin-bottom-35, .margin-bottom-40, .margin-bottom-45, .margin-bottom-50, .margin-bottom-55, .margin-bottom-60, .margin-bottom-100 {
+    clear: both;
+}
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+.block-grid-v1-add-info {
+    margin: 0;
+    padding-top: 15px;
+    border-top: solid 1px #eee;
+}
+
+.block-grid-v1-add-info li a {
+    font-size: 11px;
+    padding: 4px 7px;
+    text-decoration: none;
+    border: solid 2px #eee;
+    border-radius: 3px !important;
+}
+
+p, li, li a, label {
+    color: #555;
+}
+
+.block-grid-v1-add-info li {
+    padding: 0;
+    margin-right: 3px;
+    margin-bottom: 10px;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.categories-main {
+    width: 49%;
+    display: inline-block;
+    background: #f7f7f7;
+}
+.category-divs > div {
+    display: inline;
+}
