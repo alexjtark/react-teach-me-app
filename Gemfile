@@ -24,6 +24,13 @@ group :development, :test do
   gem 'byebug'
 end
 
+gem "rspec-rails", :group => [:test, :development]
+group :test do
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem "guard-rspec"
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> 
   gem 'web-console', '~> 2.0'
