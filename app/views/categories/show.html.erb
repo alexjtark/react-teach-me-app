@@ -1,0 +1,25 @@
+<div class="container-fluid">
+
+
+  <div class="panel panel-success">
+    <div class="panel-heading <%= @category.name  %>">
+      <div class="hero-intro sub-cat-hero">
+      <h1><%= @category.name  %></h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container content">
+        <!-- Top Categories -->
+        <div class="headline"><h2>SubCategories</h2></div>
+        <div class="row category margin-bottom-20">
+          <!-- Info Blocks -->
+          <div class="col-md-8 col-sm-6 category-divs">
+<% @subcategories.each do |sub|  %>
+	
+	<%= react_component "Subcategory", {category: sub.name, id: sub.id, subcategory: sub.posts.count} %>
+<% end %>
+          </div>
+
+
+</div>
