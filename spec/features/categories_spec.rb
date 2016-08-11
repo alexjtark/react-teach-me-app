@@ -12,4 +12,9 @@ feature 'Category' do
     expect(page).to have_text("Top Categories")
   end
 
+  scenario "expect to visit about us page" do
+  	visit '/about'
+  	expect(page). to have_text("About Us")
+  end
+
 end
