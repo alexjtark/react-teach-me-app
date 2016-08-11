@@ -1,0 +1,35 @@
+<% if current_user.id != params[:user_id].to_i %>
+	<li><%= link_to "You Can Only View Your Own Profile", profile_path(:user_id => current_user.id), id: "profile" %></li>
+<% elsif current_user.id == params[:user_id].to_i %>
+<div class="container-fluid">
+	<div class="col-md-12">
+		<h1>Hello, <%= @user.first_name %>, this is your profile</h1>
+	</div>
+	<!-- <div class="row"> -->
+	<div class="col-md-12">
+
+		<div class="col-md-6 grey padding-10 border-3-white">
+			<div id="profile-data" class="profile">
+			
+				<%= render(:partial => "users/profile")  %>
+			</div>
+		</div>
+		<div class="col-md-6 grey padding-10 border-3-white">
+			<h3>Your Listings</h3>
+				<% if @user.posts.count == 0 %>
+				<p>Nothing yet... create one now!</p>
+					<% else %>
+					<% @user.posts.each do |p| %>
+					<p><%= p.title  %></p>
+					<% end %>
+				<% end %>
+			<h3>Your Earnings</h3>
+			<p>No Earnings yet...</p>
+		</div>
+		<div class="col-md-6 grey padding-10 border-3-white">
+			<h3>Classes You've Taken</h3>
+		</div>
+	</div>
+	<!-- </div> -->
+</div>
+<% end %>

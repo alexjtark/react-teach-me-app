@@ -1,0 +1,11 @@
+<h3>Profile Information</h3>
+<%= link_to "Edit", edit_user_path(@user), remote: true, class: "btn btn-primary profile-edit", id: "profile-edit-button" %>
+<p><span class="titles">First Name:</span> <%= @user.first_name %></p>
+<p><span class="titles">Last Name:</span> <%= @user.last_name  %></p>
+<p><span class="titles">Location:</span> <%= @user.locale %></p>
+<% if @user.skills.count == 0 %>
+<p><span class="titles">Skills:</span> Add some skills</p>
+<% elsif @user.skills >= 1 %>
+<p><span class="titles">Skills:</span> <%= @user.skills  %></p>
+<% end %>
+

@@ -1,0 +1,8 @@
+<h3>Edit Your Information</h3>
+<%= link_to "Cancel", profile_path(@user), remote: true, class: "btn btn-primary profile-save", id: "profile-save-button" %>
+	<p>First Name: <%= @user.first_name %></p>
+	<p>Last Name: <%= @user.last_name  %></p>
+<%= form_for(@user, remote: true) do |f| %>
+<p>Location:<%= f.text_field :locale, class: 'form-control edit-input' %></p>
+<%= f.submit "Save" %>
+<% end %>
