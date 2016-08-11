@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get '/profile/:user_id' => 'users#profile', as: :profile
 
+  get 'about' => 'welcome#about', as: :about
+
   get '/search' => 'subcategories#search', as: :search
 
   get 'auth/:provider/callback', to: 'sessions#create'
