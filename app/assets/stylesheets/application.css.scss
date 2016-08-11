@@ -298,14 +298,23 @@ p, li, li a, label {
 #nav-img {
     height: 70px;
 }
-.profile-edit {
+.profile-edit, .profile-save {
     position: absolute;
     right: 10px;
     top: 30px;
     border: 0px;
 }
+.profile-save {
+    background-color: #ff6060;
+}
+.profile-save:hover {
+    background-color: #ff2121;
+}
 .edit-input {
     width: 50%;
     display: inline;
     margin-left: 10px;
+}
+span.titles {
+    font-weight: 900;
 }
