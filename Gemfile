@@ -16,8 +16,9 @@ gem 'omniauth-facebook'
 gem 'jquery-rails'
 gem 'turbolinks'
 
+gem 'impressionist'
+
 gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
@@ -29,7 +30,6 @@ group :test do
   gem "factory_girl_rails"
   gem "capybara"
   gem "guard-rspec"
-  gem 'factory_girl_rails'
 end
 
 group :development do

@@ -1,0 +1,27 @@
+<header class="site-header">
+    <div class="container-fluid">
+    <div class="site-logo">
+    <h1>
+        <a href="/" title="Convocation" class="default-logo"><img src="/assets/logo.png" alt="Convocation"></a>                         <a href="http://wp2.imithemes.com/convocation2/" title="Convocation" class="retina-logo"><img src="http://wp2.imithemes.com/convocation2/wp-content/themes/convocation/images/logo@2x.png" alt="Convocation" width="205" height="30"></a> 
+    </h1>
+        </div>
+                        <!-- Main Navigation -->
+    <nav class="main-navigation">
+        <ul id="menu-menu-1" class="sf-menu sf-js-enabled"><li id="menu-item-188" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-23 current_page_item"><a href="/" data-slug="convocation2">Home</a></li>
+        <li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/" data-slug="partners">Partners</a></li>
+        <li id="menu-item-192" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about" data-slug="about-2" >About</a></li>
+        <li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page">
+            <% if current_user != nil %>
+                <img id="nav-img" src="<%= current_user.image %>" alt=""></li>
+                <li><%= link_to "Profile", profile_path(:user_id => current_user.id), id: "profile" %></li>
+                <li><%= link_to "Sign out", logout_path, id: "sign_out" %></li>
+            <% else %>
+                <li><%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %></li>
+            <% end %>
+        </li>
+        </ul>            
+    </nav>   
+                
+        <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+    </div>
+</header>
