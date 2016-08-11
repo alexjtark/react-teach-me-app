@@ -1,0 +1,112 @@
+<div class="container-fluid">
+	<div class="row margin-top-20">
+		<div class="col-md-12">
+			<div class="col-md-8 listing-area">
+
+				<% @posts.each do |post|  %>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-bottom-10">
+							<img class="img-responsive" src="/assets/person.jpg" alt="images">
+							<a href="/posts/<%= post.id %>"><h3><%= post.title %></h3></a>
+							<p><span class="post-rate">$<%= post.rate %></span> per lesson</p>
+						</div>
+			<% end %>
+			</div>
+		<div class="col-md-4">
+			<div class="left-sidebar">
+
+            <!-- catalog-area start -->
+            <div class="single-sidebar-area catalog-area">
+                <div class="single-sidebar-title catalog-title">
+                    <h4><a href="#">Condition</a></h4>
+                </div>
+                <div class="catalog-content">
+                	<%= react_component "Search", { subcategoriesPath: category_subcategories_path(:json), searchPath: search_path } %>
+
+                </div>
+            </div>
+            <!-- catalog-area end -->
+            <!-- catalog-area start -->
+            <div class="single-sidebar-area catalog-area">
+                <div class="single-sidebar-title catalog-title">
+                    <h4><a href="#">Manufacturer</a></h4>
+                </div>
+                <div class="catalog-content">
+                    <input type="checkbox" class="checkbox">
+                    <span>Fashion (13)</span>
+                    <input type="checkbox" class="checkbox">
+                    <span>Manufacturer (13)</span>
+                </div>
+            </div>
+            <!-- catalog-area end -->
+            <!-- catalog-area start -->
+            <div class="single-sidebar-area catalog-area">
+                <div class="single-sidebar-title catalog-title">
+                    <h4><a href="#">Price</a></h4>
+                </div>
+                <div class="catalog-content">
+                    <div class="price-filter-area">
+                        <div class="price-filter">
+                            <p>
+                              Range: <input type="text" id="amount" readonly="" style="border:0; color:#444;">
+                            </p>
+                            <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 3.57143%; width: 53.75%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 3.57143%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 57.3214%;"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- catalog-area end -->
+            <!-- catalog-area start -->
+            <div class="single-sidebar-area catalog-area">
+                <div class="single-sidebar-title catalog-title">
+                    <h4><a href="#">Size</a></h4>
+                </div>
+                <div class="catalog-content">
+                    <input type="checkbox" class="checkbox">
+                    <span>S (4)</span>
+                    <input type="checkbox" class="checkbox">
+                    <span>L (4)</span>
+                    <input type="checkbox" class="checkbox">
+                    <span>M (4)</span>
+                </div>
+            </div>
+            <!-- catalog-area end -->
+            <!-- catalog-area start -->
+            <div class="single-sidebar-area catalog-area">
+                <div class="single-sidebar-title catalog-title">
+                    <h4><a href="#">Compositions</a></h4>
+                </div>
+                <div class="catalog-content">
+                    <input type="checkbox" class="checkbox">
+                    <span>Cotton (3)</span>
+                    <input type="checkbox" class="checkbox">
+                    <span>Polyester (2)</span>
+                    <input type="checkbox" class="checkbox">
+                    <span>Viscose (2)</span>
+                </div>
+            </div>
+            <!-- catalog-area end -->
+            <!-- catalog-area start -->
+            <div class="single-sidebar-area catalog-area">
+                <div class="single-sidebar-title catalog-title">
+                    <h4><a href="#">Properties</a></h4>
+                </div>
+                <div class="catalog-content">
+                    <input type="checkbox" class="checkbox">
+                    <span>Colorful Dress (1)</span>
+                    <input type="checkbox" class="checkbox">
+                    <span>Maxi Dress (1)</span>
+                    <input type="checkbox" class="checkbox">
+                    <span>Midi Dress (1)</span>
+                    <input type="checkbox" class="checkbox">
+                    <span>Short Dress (2)</span>
+                    <input type="checkbox" class="checkbox">
+                    <span>Short Sleeve (2)</span>
+                </div>
+            </div>
+            <!-- catalog-area end -->
+        </div>
+		</div>
+	</div>
+
+	</div>
+</div>
